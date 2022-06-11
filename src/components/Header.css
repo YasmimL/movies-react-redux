@@ -1,0 +1,36 @@
+.movies-header {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  flex-basis: 20%;
+  color: white;
+}
+
+.header-title h5 {
+  margin: 0;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+}
+
+.header-separator {
+  flex-grow: 1;
+}
+
+.header-favorites button {
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+
+.header-favorites svg {
+  margin-left: 0.4rem;
+}
+
+.header-favorites svg path{
+  color: #fabb62;
+}

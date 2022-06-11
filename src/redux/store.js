@@ -1,8 +1,9 @@
 // Usando método legado createStore o qual não é recomendado.
 // Redux Toolkit é a abordagem recomendada para código Redux atualmente.
-import { legacy_createStore as createStore } from "redux";
-import moviesReducer from "./reducers/movies-reducer";
+import { applyMiddleware, legacy_createStore as createStore } from "redux";
+import thunk from "redux-thunk";
+import moviesReducer from "./reducers/moviesReducer";
 
-const store = createStore(moviesReducer);
+const store = createStore(moviesReducer, applyMiddleware(thunk));
 
 export default store;

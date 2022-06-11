@@ -1,0 +1,16 @@
+.card {
+  border-radius: 0.55rem;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .card-img-top {
+  min-width: 218px;
+  min-height: 327px;
+}
