@@ -1,0 +1,39 @@
+.movie-details {
+  display: flex;
+}
+
+.movie-details img {
+  max-width: 240px;
+}
+
+.movie-details .title {
+  display: flex;
+  align-items: center;
+}
+
+.movie-details .title h2 {
+  margin-bottom: 0;
+}
+
+.movie-details .title .btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.movie-details .details {
+  padding: 0.3rem 1rem;
+}
+
+.details .modal-title {
+  font-size: 1.6rem;
+}
+
+.details .infos {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.infos .movie-label {
+  font-weight: bold;
+}

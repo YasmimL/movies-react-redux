@@ -1,18 +1,18 @@
+import dateformat from "dateformat";
+
+import { renderPost } from "../helpers/Poster";
+
 import "./CardMovie.css";
-
-const POSTER_URL = "https://image.tmdb.org/t/p/";
-
-const renderPost = (path) => `${POSTER_URL}w220_and_h330_face${path}`;
 
 const renderReleaseDate = (releaseDate) => {
   if (!releaseDate) {
     <p className="card-text">Não disponível</p>;
   }
 
-  return <p className="card-text">{releaseDate}</p>;
+  return <p className="card-text">{dateformat(releaseDate, "dd/mm/yyyy")}</p>;
 };
 
-function CardMovie({ movie }) {
+function CardMovie({ movie, onClickDetails }) {
   return (
     <div className="card shadow">
       <img
@@ -29,6 +29,7 @@ function CardMovie({ movie }) {
           className="btn btn-primary"
           tooltip="Detalhes do filme"
           placement="top"
+          onClick={() => onClickDetails(movie)}
         >
           Detalhes
         </button>

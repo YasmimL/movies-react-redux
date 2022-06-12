@@ -30,14 +30,6 @@ export default class Api {
     return this.client;
   };
 
-  // getUserList = (params) => {
-  //   return this.init().get("/users", { params });
-  // };
-
-  // addNewUser = (data) => {
-  //   return this.init().post("/users", data);
-  // };
-
   fetchMovies = (dispatch) => {
     return this.init()
       .get("/discover/movie")
