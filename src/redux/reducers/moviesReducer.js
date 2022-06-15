@@ -1,10 +1,10 @@
-const inititalState = {
+const initialState = {
   allMovies: [],
   favorites: [],
   selectedMovie: null,
 };
 
-const moviesReducer = (state = inititalState, action) => {
+const moviesReducer = (state = initialState, action) => {
   switch (action.type) {
     case "FETCH_MOVIES": {
       return {
